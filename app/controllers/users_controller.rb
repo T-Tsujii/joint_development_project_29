@@ -26,6 +26,11 @@ def update
     user.update(user_params)
 end
 
+def destroy
+    user = User.find(params[:id])
+    user.destroy
+end
+
 
 
 
